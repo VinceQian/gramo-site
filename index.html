@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gramo · Smart Spoon Demo</title>
+  <meta name="description" content="A simple project website demo for Gramo Smart Spoon." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">gramo<span>.world</span></div>
+      <a href="#demo">Demo</a>
+      <a href="#tech">Tech</a>
+      <a href="#team">Team</a>
+    </nav>
+    <section class="hero-content">
+      <p class="eyebrow">Smart Spoon Project</p>
+      <h1>Food recognition + intake tracking, in one lightweight eating experience.</h1>
+      <p class="subtitle">Gramo is a concept smart spoon that combines food recognition, weight sensing, and meal summaries to make diet logging easier.</p>
+      <div class="actions">
+        <a class="button primary" href="#demo">View demo</a>
+        <a class="button" href="#tech">How it works</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="cards" id="demo">
+      <article class="card">
+        <h2>1. Recognize food</h2>
+        <p>Upload or take a meal photo. The app returns candidate dish names, confidence, and calories per 100g.</p>
+      </article>
+      <article class="card">
+        <h2>2. Measure intake</h2>
+        <p>The spoon records weight changes and motion events while the user eats.</p>
+      </article>
+      <article class="card">
+        <h2>3. Generate summary</h2>
+        <p>The app combines confirmed food data with intake weight to estimate meal calories.</p>
+      </article>
+    </section>
+
+    <section class="split" id="tech">
+      <div>
+        <p class="eyebrow">Prototype chain</p>
+        <h2>Phone sees, spoon measures.</h2>
+        <p>Camera recognition estimates what the food is. Hardware sensing estimates how much was actually eaten. The result is a more complete meal record.</p>
+      </div>
+      <div class="panel">
+        <div class="step">Photo/API → Dish + kcal/100g</div>
+        <div class="step">Load cell/IMU → Intake events</div>
+        <div class="step">App → Confirmed meal report</div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <p class="eyebrow">Team page placeholder</p>
+      <h2>Replace this section with team members, prototype photos, and project video.</h2>
+      <p>This is only a minimal deployment test page. Once the domain works, swap in the real project website content.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Gramo Demo</span>
+    <span id="status">Static site ready</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
