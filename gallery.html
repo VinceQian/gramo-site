@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View DiveGuard's evolution from concept to prototype through our model gallery.">
+  <title>Model Gallery - DiveGuard</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2.5rem;
+    }
+    
+    .gallery-item {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      background: white;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0, 217, 255, 0.25);
+    }
+    
+    .gallery-image {
+      width: 100%;
+      height: 350px;
+      background: var(--gradient-ocean);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .gallery-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, transparent 100%);
+      transition: opacity 0.4s ease;
+    }
+    
+    .gallery-item:hover .gallery-image::before {
+      opacity: 0;
+    }
+    
+    .gallery-caption {
+      padding: 2rem;
+    }
+    
+    .gallery-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.8rem;
+    }
+    
+    .gallery-description {
+      font-size: 1rem;
+      color: var(--neutral-gray);
+      line-height: 1.6;
+    }
+    
+    .gallery-badge {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: var(--accent-orange);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      z-index: 2;
+    }
+    
+    .timeline {
+      position: relative;
+      padding: 3rem 0;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--gradient-wave);
+      transform: translateX(-50%);
+    }
+    
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4rem;
+      position: relative;
+    }
+    
+    .timeline-item:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+    
+    .timeline-content {
+      width: 45%;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .timeline-dot {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 0 4px rgba(0, 217, 255, 0.2);
+    }
+    
+    @media (max-width: 968px) {
+      .timeline::before {
+        left: 20px;
+      }
+      
+      .timeline-item,
+      .timeline-item:nth-child(odd) {
+        flex-direction: row;
+        padding-left: 50px;
+      }
+      
+      .timeline-content {
+        width: 100%;
+      }
+      
+      .timeline-dot {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌊</span>
+        DiveGuard
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="innovation.html" class="nav-link">Innovation</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="market.html" class="nav-link">Market</a></li>
+        <li><a href="technology.html" class="nav-link">Technology</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero-content">
+      <p class="hero-subtitle">From Concept to Prototype</p>
+      <h1 class="hero-title">Model Gallery</h1>
+      <p class="hero-description">
+        Our journey began with a simple question: Can we make underwater safety affordable for everyone?<br>
+        From sketches to working prototypes, each stage brought us closer to realizing that vision.
+      </p>
+    </div>
+    <div class="wave-background"></div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;" data-aos="fade-up">
+        <h2 class="section-title">Every Prototype Dives Deeper into Possibility</h2>
+        <p style="font-size: 1.2rem; color: var(--neutral-gray); line-height: 1.8;">
+          Each iteration represents countless hours of design, engineering, and testing. See how DiveGuard evolved from initial concepts to a fully functional underwater communication and safety system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="section" style="padding-top: 2rem; background: #F7FAFC;">
+    <div class="container">
+      <div class="gallery-grid">
+        
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-badge">Concept</div>
+          <div class="gallery-image">
+            <span>✏️</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Initial Sketches</h3>
+            <p class="gallery-description">
+              Early conceptual drawings exploring wrist-worn form factors and surface buoy relay systems. These sketches laid the foundation for our modular approach.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-badge">CAD Design</div>
+          <div class="gallery-image">
+            <span>📐</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">3D CAD Models</h3>
+            <p class="gallery-description">
+              Detailed mechanical designs showing internal component layout, sensor integration, and waterproof sealing mechanisms. Precision engineering for harsh environments.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-badge">Prototype v1</div>
+          <div class="gallery-image" style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);">
+            <span>🔧</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">First Prototype</h3>
+            <p class="gallery-description">
+              Initial working prototype with basic acoustic transmission and sensor integration. Validated core concept and identified key areas for improvement.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-badge">Testing</div>
+          <div class="gallery-image" style="background: linear-gradient(135deg, #00D9FF 0%, #4ECDC4 100%);">
+            <span>🏊</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Pool Testing</h3>
+            <p class="gallery-description">
+              Controlled environment testing to validate waterproofing, communication range, and sensor accuracy. Multiple iterations refined the design.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-badge">Prototype v2</div>
+          <div class="gallery-image" style="background: linear-gradient(135deg, #1E3A5F 0%, #2C5F8D 100%);">
+            <span>⌚</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Refined Wrist Module</h3>
+            <p class="gallery-description">
+              Enhanced wearable design with improved ergonomics, longer battery life, and optimized sensor placement. IP68 waterproof rating verified.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-badge">Field Test</div>
+          <div class="gallery-image" style="background: linear-gradient(135deg, #0A7373 0%, #4ECDC4 100%);">
+            <span>🌊</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Ocean Trials</h3>
+            <p class="gallery-description">
+              Real-world testing in coastal waters. Validated performance in varying conditions including waves, currents, and marine interference.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-badge">Component</div>
+          <div class="gallery-image">
+            <span>📡</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Surface Buoy</h3>
+            <p class="gallery-description">
+              Floating relay station with GPS tracking and cellular connectivity. Bridges underwater acoustic signals to surface monitoring systems.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-badge">Integration</div>
+          <div class="gallery-image" style="background: linear-gradient(135deg, #2C5F8D 0%, #00D9FF 100%);">
+            <span>🔌</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">System Assembly</h3>
+            <p class="gallery-description">
+              Complete system integration showing wrist module, buoy, and base station working together. Full network mesh topology demonstrated.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Gallery Item 9 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-badge">Current</div>
+          <div class="gallery-image" style="background: linear-gradient(135deg, #FF6B35 0%, #00D9FF 100%);">
+            <span>✨</span>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Pre-Production Model</h3>
+            <p class="gallery-description">
+              Latest iteration ready for manufacturing. Incorporates all learnings from previous prototypes with polished industrial design and optimized performance.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Evolution Timeline -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-subtitle">Development Journey</p>
+        <h2 class="section-title">Evolution Timeline</h2>
+        <p class="section-description">
+          Prototype 1 → Prototype 2 → Pre-Production Model
+        </p>
+      </div>
+      
+      <div class="timeline">
+        
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">2023 Q4</h3>
+            <h4 style="font-size: 1.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">Concept Phase</h4>
+            <p style="color: var(--neutral-gray); line-height: 1.7;">
+              Initial research and conceptual designs. Team formation and problem definition. Feasibility studies for acoustic communication underwater.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">2024 Q1</h3>
+            <h4 style="font-size: 1.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">Prototype 1</h4>
+            <p style="color: var(--neutral-gray); line-height: 1.7;">
+              First functional prototype completed. Basic acoustic transmission working. Initial sensor integration. Proof of concept validated.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">2024 Q2</h3>
+            <h4 style="font-size: 1.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">Testing & Iteration</h4>
+            <p style="color: var(--neutral-gray); line-height: 1.7;">
+              Extensive pool testing. Identified waterproofing challenges. Refined sensor accuracy. Improved battery efficiency by 40%.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">2024 Q3</h3>
+            <h4 style="font-size: 1.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">Prototype 2</h4>
+            <p style="color: var(--neutral-gray); line-height: 1.7;">
+              Enhanced design with improved ergonomics. IP68 waterproof rating achieved. Successful field tests in ocean conditions. Multi-device networking functional.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">2024 Q4</h3>
+            <h4 style="font-size: 1.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">Pre-Production</h4>
+            <p style="color: var(--neutral-gray); line-height: 1.7;">
+              Final design refinements. Manufacturing partnerships established. Regulatory compliance testing. Product certification in progress.
+            </p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--accent-orange); margin-bottom: 0.5rem;">2025</h3>
+            <h4 style="font-size: 1.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">Market Launch</h4>
+            <p style="color: var(--neutral-gray); line-height: 1.7;">
+              Production ramp-up. Initial market release. Customer feedback integration. Global distribution planning.
+            </p>
+          </div>
+          <div class="timeline-dot" style="background: var(--accent-orange);"></div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: var(--gradient-ocean); color: white;">
+    <div class="container">
+      <div class="text-center" data-aos="zoom-in">
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1.5rem;">
+          Interested in the Technical Details?
+        </h2>
+        <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Learn about the engineering and technology that powers DiveGuard's innovation.
+        </p>
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <a href="technology.html" class="btn btn-primary" style="background: var(--accent-orange);">View Technology</a>
+          <a href="innovation.html" class="btn btn-secondary" style="border-color: white; color: white;">See Innovation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="logo" style="margin-bottom: 1rem;">
+            <span class="logo-icon">🌊</span>
+            DiveGuard
+          </h3>
+          <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">
+            Empowering every dive with safety and connection. Making underwater exploration accessible, secure, and smarter for divers worldwide.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="innovation.html">Innovation</a></li>
+            <li><a href="technology.html">Technology</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Model Gallery</a></li>
+            <li><a href="market.html">Market & Impact</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Get in Touch</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> info@diveguard.com</li>
+            <li><a href="#" class="social-link" aria-label="Phone"><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> +1 (555) 123-4567</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 DiveGuard · All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

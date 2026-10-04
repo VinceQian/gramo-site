@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover DiveGuard's innovative underwater communication and safety features.">
+  <title>Innovation - DiveGuard</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <style>
+    .feature-box {
+      background: white;
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      border: 1px solid rgba(0, 217, 255, 0.1);
+      height: 100%;
+    }
+    
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
+      border-color: var(--accent-cyan);
+    }
+    
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      background: var(--gradient-wave);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+    
+    .system-diagram {
+      background: var(--gradient-ocean);
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+      color: white;
+      margin: 3rem 0;
+    }
+    
+    .diagram-item {
+      display: inline-block;
+      margin: 1rem;
+      text-align: center;
+    }
+    
+    .diagram-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .arrow {
+      font-size: 2rem;
+      color: var(--accent-cyan);
+      margin: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌊</span>
+        DiveGuard
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="innovation.html" class="nav-link active">Innovation</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="market.html" class="nav-link">Market</a></li>
+        <li><a href="technology.html" class="nav-link">Technology</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <button class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero-content">
+      <p class="hero-subtitle">Redefining Underwater Safety</p>
+      <h1 class="hero-title">Innovation That<br>Saves Lives</h1>
+      <p class="hero-description">
+        DiveGuard combines underwater acoustic communication<br>with physiological data monitoring — creating a connected safety network beneath the sea.
+      </p>
+    </div>
+    <div class="wave-background"></div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-subtitle">Core Features</p>
+        <h2 class="section-title">What Makes DiveGuard Special</h2>
+        <p class="section-description">
+          Five revolutionary features that transform underwater diving into a safer, smarter experience.
+        </p>
+      </div>
+      
+      <div class="grid grid-2" style="gap: 2.5rem;">
+        
+        <!-- Feature 1 -->
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <i class="fas fa-satellite-dish"></i>
+          </div>
+          <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem;">
+            Acoustic Communication
+          </h3>
+          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
+            Sends short data messages through sound waves, even in low visibility. Our proprietary acoustic modulation ensures reliable transmission up to 500 meters in open water.
+          </p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-cyan);"></i>
+              <span>Works in zero visibility conditions</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-cyan);"></i>
+              <span>Up to 500m range in open water</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-cyan);"></i>
+              <span>Low-frequency for better penetration</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem;">
+            Vital Monitoring
+          </h3>
+          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
+            Tracks heart rate, oxygen saturation, water temperature, and depth in real time. Instant alerts when vitals exceed safe thresholds.
+          </p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-orange);"></i>
+              <span>Heart rate monitoring</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-orange);"></i>
+              <span>Oxygen saturation (SpO2)</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-orange);"></i>
+              <span>Depth & temperature sensors</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #4ECDC4 0%, #0A7373 100%);">
+            <i class="fas fa-ruler-horizontal"></i>
+          </div>
+          <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem;">
+            Smart Distance Detection
+          </h3>
+          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
+            Measures the range between team members at the press of a button. Keep track of your dive buddy and maintain safe distances during group dives.
+          </p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-teal);"></i>
+              <span>Real-time distance tracking</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-teal);"></i>
+              <span>Proximity alerts</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--accent-teal);"></i>
+              <span>Multi-diver tracking</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #1E3A5F 0%, #2C5F8D 100%);">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem;">
+            Modular System
+          </h3>
+          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
+            Wrist-worn unit pairs seamlessly with surface buoys and underwater relay nodes. Scale from solo dives to complex multi-team operations.
+          </p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--primary-blue);"></i>
+              <span>Wrist module + surface buoy</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--primary-blue);"></i>
+              <span>Expandable relay network</span>
+            </li>
+            <li style="padding: 0.5rem 0; display: flex; align-items: center; gap: 0.8rem;">
+              <i class="fas fa-check" style="color: var(--primary-blue);"></i>
+              <span>Scalable architecture</span>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- System Diagram -->
+  <section class="section" style="background: #F7FAFC;">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-subtitle">How It Works</p>
+        <h2 class="section-title">Connected Safety Network</h2>
+      </div>
+      
+      <div class="system-diagram" data-aos="zoom-in">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem;">
+          <div class="diagram-item">
+            <span class="diagram-icon">⌚</span>
+            <h4 style="font-size: 1.2rem; font-weight: 600;">Wrist Module</h4>
+            <p style="opacity: 0.9; font-size: 0.95rem;">Worn by diver</p>
+          </div>
+          
+          <span class="arrow">→</span>
+          
+          <div class="diagram-item">
+            <span class="diagram-icon">📡</span>
+            <h4 style="font-size: 1.2rem; font-weight: 600;">Acoustic Signal</h4>
+            <p style="opacity: 0.9; font-size: 0.95rem;">Data transmission</p>
+          </div>
+          
+          <span class="arrow">→</span>
+          
+          <div class="diagram-item">
+            <span class="diagram-icon">🛟</span>
+            <h4 style="font-size: 1.2rem; font-weight: 600;">Surface Buoy</h4>
+            <p style="opacity: 0.9; font-size: 0.95rem;">Relay station</p>
+          </div>
+          
+          <span class="arrow">→</span>
+          
+          <div class="diagram-item">
+            <span class="diagram-icon">📱</span>
+            <h4 style="font-size: 1.2rem; font-weight: 600;">Base Station</h4>
+            <p style="opacity: 0.9; font-size: 0.95rem;">Monitoring hub</p>
+          </div>
+        </div>
+        
+        <p style="margin-top: 2rem; font-size: 1.1rem; opacity: 0.95;">
+          Prototype V2 — Compact, waterproof, network-ready
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Low-Cost Design -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+        
+        <div data-aos="fade-right">
+          <div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); border-radius: 20px; padding: 4rem; text-align: center; color: white; box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3);">
+            <div style="font-size: 5rem; margin-bottom: 1.5rem;">💰</div>
+            <h3 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">70%</h3>
+            <p style="font-size: 1.3rem; opacity: 0.95;">Cost Reduction</p>
+            <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.9;">
+              Compared to existing professional systems
+            </p>
+          </div>
+        </div>
+        
+        <div data-aos="fade-left">
+          <div class="section-subtitle">Accessible Technology</div>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
+            Professional-Grade at Fraction of the Cost
+          </h2>
+          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
+            We believe safety technology should be accessible to every diver, not just professionals with deep pockets. DiveGuard achieves professional-grade performance at significantly lower cost through:
+          </p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
+              <i class="fas fa-star" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
+              <span style="font-size: 1rem; line-height: 1.6;"><strong>Optimized components:</strong> Carefully selected for best price-performance ratio</span>
+            </li>
+            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
+              <i class="fas fa-star" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
+              <span style="font-size: 1rem; line-height: 1.6;"><strong>Smart engineering:</strong> Efficient design reduces manufacturing complexity</span>
+            </li>
+            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
+              <i class="fas fa-star" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
+              <span style="font-size: 1rem; line-height: 1.6;"><strong>Modular approach:</strong> Users only pay for what they need</span>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: var(--gradient-ocean); color: white;">
+    <div class="container">
+      <div class="text-center" data-aos="zoom-in">
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1.5rem;">
+          See the Technology Behind the Innovation
+        </h2>
+        <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+          Dive deeper into the technical details and engineering that makes DiveGuard possible.
+        </p>
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <a href="technology.html" class="btn btn-primary" style="background: var(--accent-orange);">View Technology</a>
+          <a href="gallery.html" class="btn btn-secondary" style="border-color: white; color: white;">Model Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="logo" style="margin-bottom: 1rem;">
+            <span class="logo-icon">🌊</span>
+            DiveGuard
+          </h3>
+          <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">
+            Empowering every dive with safety and connection. Making underwater exploration accessible, secure, and smarter for divers worldwide.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="innovation.html">Innovation</a></li>
+            <li><a href="technology.html">Technology</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="gallery.html">Model Gallery</a></li>
+            <li><a href="market.html">Market & Impact</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Get in Touch</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> info@diveguard.com</li>
+            <li><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> +1 (555) 123-4567</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 DiveGuard · All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
