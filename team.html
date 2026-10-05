@@ -3,130 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Meet the interdisciplinary team behind DiveGuard's underwater safety innovation.">
-  <title>Our Team - DiveGuard</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  
-  <!-- Main Stylesheet -->
+  <meta name="description" content="Meet the Equimeal team — the engineers, designers, and health enthusiasts behind Gramo, the smart spoon.">
+  <title>Team — Equimeal</title>
   <link rel="stylesheet" href="css/main.css">
-  
-  <style>
-    .team-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 20px;
-      background: white;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(0, 217, 255, 0.1);
-    }
-    
-    .team-card:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 25px 70px rgba(0, 217, 255, 0.25);
-      border-color: var(--accent-cyan);
-    }
-    
-    .team-image {
-      width: 100%;
-      height: 300px;
-      background: var(--gradient-ocean);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 6rem;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .team-image::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: var(--gradient-glow);
-      opacity: 0;
-      transition: opacity 0.4s ease;
-    }
-    
-    .team-card:hover .team-image::before {
-      opacity: 1;
-    }
-    
-    .team-info {
-      padding: 2rem;
-    }
-    
-    .team-name {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--primary-dark);
-      margin-bottom: 0.5rem;
-    }
-    
-    .team-role {
-      font-size: 1rem;
-      color: var(--accent-cyan);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-    }
-    
-    .team-description {
-      font-size: 1rem;
-      color: var(--neutral-gray);
-      line-height: 1.7;
-    }
-    
-    .team-social {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 1.5rem;
-    }
-    
-    .team-social a {
-      width: 35px;
-      height: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 217, 255, 0.1);
-      border-radius: 50%;
-      color: var(--accent-cyan);
-      transition: var(--transition-smooth);
-    }
-    
-    .team-social a:hover {
-      background: var(--accent-cyan);
-      color: white;
-      transform: translateY(-3px);
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">🌊</span>
-        DiveGuard
-      </a>
-      
+      <a href="index.html" class="nav-logo">Gramo <small>by Equimeal</small></a>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="team.html" class="nav-link active">Team</a></li>
         <li><a href="innovation.html" class="nav-link">Innovation</a></li>
         <li><a href="gallery.html" class="nav-link">Gallery</a></li>
@@ -134,273 +22,118 @@
         <li><a href="technology.html" class="nav-link">Technology</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-      
-      <button class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" style="min-height: 60vh;">
-    <div class="hero-content">
-      <p class="hero-subtitle">The Minds Behind DiveGuard</p>
-      <h1 class="hero-title">Our Team of<br>Innovators</h1>
-      <p class="hero-description">
-        An interdisciplinary team united by one goal:<br>to redefine underwater communication and safety.
-      </p>
-    </div>
-    <div class="wave-background"></div>
-  </section>
+  <header class="page-hero">
+    <p class="eyebrow">Our Team</p>
+    <h1 class="h-section">Diverse skills.<br>Shared appetite.</h1>
+    <p class="h-sub">Hardware, software, design, and nutrition science — one team obsessed with making healthy eating effortless.</p>
+  </header>
 
-  <!-- Intro Section -->
   <section class="section">
-    <div class="container">
-      <div class="text-center" style="max-width: 900px; margin: 0 auto;" data-aos="fade-up">
-        <h2 class="section-title">Diverse Skills, Shared Vision</h2>
-        <p style="font-size: 1.2rem; color: var(--neutral-gray); line-height: 1.8;">
-          We are engineers, designers, and entrepreneurs united by our passion for the ocean and commitment to safety. Our diverse backgrounds drive every step of innovation — from research and prototyping to business modeling and impact design.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team Members -->
-  <section class="section" style="padding-top: 2rem;">
-    <div class="container">
-      <div class="grid grid-3">
-        
-        <!-- Team Member 1 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-image">
-            <span>👨‍💻</span>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Ethan Chen</h3>
-            <div class="team-role">Hardware Engineer</div>
-            <p class="team-description">
-              Designs the core acoustic transmission system and waterproof sensor modules. Expert in embedded systems and underwater electronics with a passion for robust engineering solutions.
-            </p>
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
+    <div class="container wide">
+      <div class="grid grid-4">
+        <div class="member reveal">
+          <div class="avatar" style="font-size: 26px;">RX</div>
+          <h3>Rain Xu</h3>
+          <p class="role">Chief Executive Officer</p>
+          <p>Owns Equimeal's vision, strategy, and product direction. Sets the roadmap, coordinates the team, and represents Gramo to judges, mentors, and partners.</p>
         </div>
-        
-        <!-- Team Member 2 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-image">
-            <span>👩‍🎨</span>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Lily Zhang</h3>
-            <div class="team-role">Product Designer</div>
-            <p class="team-description">
-              Leads the ergonomic wearable design and user interface experience. Specializes in human-centered design and creating intuitive experiences for extreme environments.
-            </p>
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
+        <div class="member reveal d1">
+          <div class="avatar" style="font-size: 26px;">KH</div>
+          <h3>Kim Hu</h3>
+          <p class="role">Chief Technology Officer</p>
+          <p>Co-leads technology and engineering. Drives the hardware side — sensing platform, custom PCB, and firmware — turning the spoon into a working measurement device.</p>
         </div>
-        
-        <!-- Team Member 3 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-image">
-            <span>👨‍💼</span>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Ryan Wu</h3>
-            <div class="team-role">Strategy Lead</div>
-            <p class="team-description">
-              Focuses on partnerships, customer engagement, and scaling DiveGuard globally. Brings business acumen and market insight to transform innovation into impact.
-            </p>
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
+        <div class="member reveal d2">
+          <div class="avatar" style="font-size: 26px;">BL</div>
+          <h3>Brandon Liu</h3>
+          <p class="role">Chief Technology Officer</p>
+          <p>Co-leads technology and engineering. Drives the software side — companion app, AI dish recognition, and the cloud data pipeline behind every insight.</p>
         </div>
-        
-        <!-- Team Member 4 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-image">
-            <span>👩‍🔬</span>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Sarah Kim</h3>
-            <div class="team-role">Software Engineer</div>
-            <p class="team-description">
-              Develops the data processing algorithms and mobile applications. Expert in signal processing and creating robust software for real-time monitoring systems.
-            </p>
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Team Member 5 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-image">
-            <span>👨‍🏫</span>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Mark Thompson</h3>
-            <div class="team-role">Marine Consultant</div>
-            <p class="team-description">
-              Provides expertise on diving operations and marine safety standards. Former professional diver with decades of experience in underwater exploration and rescue.
-            </p>
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Team Member 6 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-image">
-            <span>👩‍💻</span>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Emily Rodriguez</h3>
-            <div class="team-role">Quality Assurance</div>
-            <p class="team-description">
-              Ensures every DiveGuard device meets rigorous safety and performance standards. Coordinates testing protocols and field validation studies.
-            </p>
-            <div class="team-social">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- Mentorship Section -->
-  <section class="section" style="background: var(--gradient-ocean); color: white;">
-    <div class="container">
-      <div class="text-center" data-aos="fade-up">
-        <div style="display: inline-block; background: rgba(255, 255, 255, 0.1); padding: 1rem 2rem; border-radius: 50px; margin-bottom: 2rem; backdrop-filter: blur(10px);">
-          <p style="font-size: 1rem; font-weight: 600; color: var(--accent-cyan); margin: 0;">Guided by Experts</p>
-        </div>
-        
-        <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 2rem;">
-          Mentorship & Guidance
-        </h2>
-        
-        <p style="font-size: 1.2rem; opacity: 0.9; line-height: 1.8; max-width: 800px; margin: 0 auto 3rem;">
-          Guided by <strong style="color: var(--accent-cyan);">JJ Zhang</strong> and the <strong style="color: var(--accent-cyan);">STEMHUB mentor team</strong>, specialized in innovation and entrepreneurship education. Their expertise has been instrumental in shaping DiveGuard from concept to reality.
-        </p>
-        
-        <div style="display: inline-flex; gap: 3rem; flex-wrap: wrap; justify-content: center; margin-top: 3rem;">
-          <div style="text-align: center;">
-            <div style="font-size: 4rem; margin-bottom: 1rem;">🎓</div>
-            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">STEMHUB</h3>
-            <p style="opacity: 0.9;">Innovation Education</p>
-          </div>
-          
-          <div style="text-align: center;">
-            <div style="font-size: 4rem; margin-bottom: 1rem;">🏆</div>
-            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">JJ Zhang</h3>
-            <p style="opacity: 0.9;">Lead Mentor</p>
-          </div>
+        <div class="member reveal d3">
+          <div class="avatar" style="font-size: 26px;">RY</div>
+          <h3>Robin Yu</h3>
+          <p class="role">Chief Financial Officer</p>
+          <p>Owns the numbers: BOM costing, pricing and margin strategy, cost structure, and the financial logic of the business model — every figure sourced and validated.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Join Us CTA -->
+  <!-- Mentorship -->
+  <section class="section gray">
+    <div class="container">
+      <div class="split">
+        <div class="copy reveal">
+          <p class="eyebrow blue">Mentorship & Support</p>
+          <h2 class="h-section">Guided by experience.</h2>
+          <p class="lede">Equimeal is guided by our teacher <strong>Qian Qiwu (钱其萩)</strong> at Hangzhou Entel Foreign Language School. From sensor calibration strategy to competition storytelling, mentorship shaped Gramo at every stage.</p>
+          <ul class="check-list">
+            <li>Embedded systems &amp; hardware debugging guidance</li>
+            <li>Conrad Challenge coaching and Lean Canvas validation</li>
+            <li>Business writing — every number backed by a source</li>
+          </ul>
+        </div>
+        <div class="media reveal d1">
+          <img src="assets/meal-flatlay.jpg" alt="A healthy meal with the Gramo spoon beside it" style="border-radius: 28px; box-shadow: 0 30px 70px rgba(0,0,0,0.12);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join CTA -->
   <section class="section">
-    <div class="container">
-      <div style="background: #F7FAFC; border-radius: 30px; padding: 5rem 3rem; text-align: center;" data-aos="zoom-in">
-        <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: var(--primary-dark); margin-bottom: 1.5rem;">
-          Want to Join Our Mission?
-        </h2>
-        <p style="font-size: 1.2rem; color: var(--neutral-gray); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-          We're always looking for passionate individuals who share our vision of making underwater exploration safer and more accessible.
-        </p>
-        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-          <a href="innovation.html" class="btn btn-secondary">See Our Work</a>
-        </div>
+    <div class="container cta reveal">
+      <h2 class="h-section">Want to build the future<br>of mindful eating?</h2>
+      <p class="h-sub">We're always happy to talk with collaborators, mentors, and fellow food-tech enthusiasts.</p>
+      <div class="row">
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        <a href="innovation.html" class="link-chevron">See our innovation</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3 class="logo" style="margin-bottom: 1rem;">
-            <span class="logo-icon">🌊</span>
-            DiveGuard
-          </h3>
-          <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">
-            Empowering every dive with safety and connection. Making underwater exploration accessible, secure, and smarter for divers worldwide.
-          </p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Gramo <small>by Equimeal</small></a>
+          <p>Equimeal — Equality and Meal. A calorie-tracking utensil that makes weight loss and nutritional management accessible to everyone.</p>
         </div>
-        
-        <div class="footer-section">
-          <h3>Quick Links</h3>
+        <div>
+          <h4>Product</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="team.html">Our Team</a></li>
             <li><a href="innovation.html">Innovation</a></li>
             <li><a href="technology.html">Technology</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
-        
-        <div class="footer-section">
-          <h3>Explore</h3>
+        <div>
+          <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="gallery.html">Model Gallery</a></li>
-            <li><a href="market.html">Market & Impact</a></li>
+            <li><a href="about.html">About Equimeal</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="market.html">Market</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
             <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Get in Touch</h3>
-          <ul class="footer-links">
-            <li><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> info@diveguard.com</li>
-            <li><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> +1 (555) 123-4567</li>
+            <li><a href="mailto:hello@equimeal.com">hello@equimeal.com</a></li>
           </ul>
         </div>
       </div>
-      
       <div class="footer-bottom">
-        <p>&copy; 2025 DiveGuard · All Rights Reserved</p>
+        <span>Copyright © 2026 Equimeal · TEAM 智味勺 · Conrad Challenge — Health &amp; Nutrition. All rights reserved.</span>
+        <span>Smart Weighing, Clear Eating.</span>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>
