@@ -14,7 +14,7 @@ Built by **Equimeal** (Equality + Meal) · TEAM 智味勺 · 2025–2026 Conrad 
 |---|---|
 | `index.html` | Overview — hero, key features, business model stats |
 | `about.html` | Mission, vision, core values, team story |
-| `team.html` | Rain Xu (CEO) · Kim Hu (CTO) · Brandon Liu (CTO) · Robin Yu (CFO) · Mentor: Qian Qiwu |
+| `team.html` | Rain Xu (CEO) · Kim Hu (CTO) · Brandon Liu (CTO) · Robin Yu (CFO) · Mentor: Qian Qiqiu |
 | `innovation.html` | Per-spoonful weighing, two-stage AI recognition, compounding moat |
 | `gallery.html` | Product visuals and design philosophy |
 | `market.html` | Problem data, segments, early adopters, business model, competitive landscape |
