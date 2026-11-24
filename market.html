@@ -3,87 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the global diving market opportunity and DiveGuard's impact on underwater safety.">
-  <title>Market & Impact - DiveGuard</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  
-  <!-- Main Stylesheet -->
+  <meta name="description" content="Gramo market analysis — the diet-tracking gap, early adopters, business model, and competitive landscape. Backed by real data.">
+  <title>Market — Gramo by Equimeal</title>
   <link rel="stylesheet" href="css/main.css">
-  
-  <style>
-    .chart-container {
-      position: relative;
-      height: 400px;
-      margin: 3rem 0;
-    }
-    
-    .stat-card {
-      background: white;
-      border-radius: 20px;
-      padding: 2.5rem;
-      text-align: center;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-      transition: all 0.4s ease;
-      border: 2px solid rgba(0, 217, 255, 0.1);
-    }
-    
-    .stat-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 60px rgba(0, 217, 255, 0.2);
-      border-color: var(--accent-cyan);
-    }
-    
-    .stat-number {
-      font-size: 3.5rem;
-      font-weight: 800;
-      background: var(--gradient-wave);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 1rem;
-      display: block;
-    }
-    
-    .stat-label {
-      font-size: 1.1rem;
-      color: var(--neutral-gray);
-      font-weight: 500;
-    }
-    
-    .impact-box {
-      background: linear-gradient(135deg, rgba(0, 217, 255, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
-      border-radius: 20px;
-      padding: 2.5rem;
-      border: 1px solid var(--accent-cyan);
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">🌊</span>
-        DiveGuard
-      </a>
-      
+      <a href="index.html" class="nav-logo">Gramo <small>by Equimeal</small></a>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="team.html" class="nav-link">Team</a></li>
         <li><a href="innovation.html" class="nav-link">Innovation</a></li>
         <li><a href="gallery.html" class="nav-link">Gallery</a></li>
@@ -91,436 +22,253 @@
         <li><a href="technology.html" class="nav-link">Technology</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-      
-      <button class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" style="min-height: 60vh;">
-    <div class="hero-content">
-      <p class="hero-subtitle">The Need Beneath the Surface</p>
-      <h1 class="hero-title">Market Opportunity<br>& Global Impact</h1>
-      <p class="hero-description">
-        The diving industry is growing rapidly — and so is the demand<br>for safer, smarter underwater technology.
-      </p>
-    </div>
-    <div class="wave-background"></div>
-  </section>
+  <header class="page-hero dark">
+    <p class="eyebrow">Market</p>
+    <h1 class="h-section">A public-health crisis<br>nobody has the tools to fix.</h1>
+    <p class="h-sub">People don't fail at diets because they lack willpower. They fail because tracking is too tedious to sustain — and guessing is too inaccurate to work.</p>
+  </header>
 
-  <!-- Market Overview -->
+  <!-- The problem in numbers -->
   <section class="section">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="section-subtitle">Market Analysis</p>
-        <h2 class="section-title">A Growing Global Industry</h2>
-        <p class="section-description">
-          The diving equipment market is experiencing steady growth, driven by increasing interest in underwater exploration and marine tourism.
-        </p>
+      <div class="section-head reveal">
+        <p class="eyebrow blue">The Problem, In Numbers</p>
+        <h2 class="h-section">The tracking gap.</h2>
       </div>
-      
-      <div class="grid grid-3">
-        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
-          <span class="stat-number">$4.4B</span>
-          <p class="stat-label">Global Market Size (2024)</p>
+      <div class="stats">
+        <div class="stat reveal">
+          <div class="num"><span class="counter" data-target="34.3">0</span><em>%</em></div>
+          <p>of Chinese adults are overweight (NHC 2024)</p>
         </div>
-        
-        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
-          <span class="stat-number">$5.5B</span>
-          <p class="stat-label">Projected Size (2030)</p>
+        <div class="stat reveal d1">
+          <div class="num"><span class="counter" data-target="16.4">0</span><em>%</em></div>
+          <p>are obese — a diet-driven public-health crisis</p>
         </div>
-        
-        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
-          <span class="stat-number">3.7%</span>
-          <p class="stat-label">Annual Growth Rate (CAGR)</p>
+        <div class="stat reveal d2">
+          <div class="num"><span class="counter" data-target="86">0</span><em>%</em></div>
+          <p>average abandonment rate of nutrition apps</p>
+        </div>
+        <div class="stat reveal d3">
+          <div class="num"><span class="counter" data-target="30">0</span><em>M+</em></div>
+          <p>active users on MyFitnessPal alone</p>
         </div>
       </div>
-      
-      <!-- Market Growth Chart -->
-      <div style="background: white; border-radius: 20px; padding: 3rem; margin-top: 4rem; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);" data-aos="fade-up">
-        <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 2rem; text-align: center;">
-          Diving Equipment Market Growth Projection
-        </h3>
-        <div class="chart-container">
-          <canvas id="marketChart"></canvas>
-        </div>
-        <p style="text-align: center; color: var(--neutral-gray); font-size: 0.95rem; margin-top: 1.5rem;">
-          Source: Industry market research reports, 2024
-        </p>
-      </div>
+      <p class="lede reveal" style="margin: 48px auto 0; text-align: center;">Workers and students aged 20–35 who eat out daily want to control calorie intake — but quit food logging. The demand is proven. The tools are the problem.</p>
     </div>
   </section>
 
-  <!-- Diving Tourism Growth -->
-  <section class="section" style="background: #F7FAFC;">
+  <!-- Segments -->
+  <section class="section gray">
     <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 4rem;">
-        
-        <div data-aos="fade-right">
-          <div class="section-subtitle">Tourism Trends</div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
-            Explosive Growth in Dive Tourism
-          </h2>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-            Diving tourism is experiencing unprecedented growth, projected to nearly double by 2030. This surge creates massive demand for reliable safety equipment.
-          </p>
-          <ul style="list-style: none; padding: 0;">
-            <li style="padding: 0.8rem 0; display: flex; align-items: center; gap: 1rem;">
-              <i class="fas fa-chart-line" style="color: var(--accent-cyan); font-size: 1.3rem;"></i>
-              <span style="font-size: 1rem;">Rising interest in marine exploration</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: center; gap: 1rem;">
-              <i class="fas fa-chart-line" style="color: var(--accent-cyan); font-size: 1.3rem;"></i>
-              <span style="font-size: 1rem;">Growing middle class in Asia-Pacific</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: center; gap: 1rem;">
-              <i class="fas fa-chart-line" style="color: var(--accent-cyan); font-size: 1.3rem;"></i>
-              <span style="font-size: 1rem;">Increased awareness of ocean conservation</span>
-            </li>
-          </ul>
+      <div class="section-head reveal">
+        <p class="eyebrow">Who We Serve</p>
+        <h2 class="h-section">Two segments, one need:<br>effortless accuracy.</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <div class="card-icon">🏃</div>
+          <h3>Weight-Management Adults</h3>
+          <p>People actively trying to lose weight and stay healthy. They already track — or tried to — and need convenient, accurate recording that doesn't demand daily discipline.</p>
         </div>
-        
-        <div data-aos="fade-left" data-aos-delay="200">
-          <div style="background: var(--gradient-ocean); border-radius: 20px; padding: 4rem 3rem; text-align: center; color: white; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);">
-            <div style="font-size: 5rem; margin-bottom: 1.5rem;">📈</div>
-            <h3 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">2x</h3>
-            <p style="font-size: 1.3rem; opacity: 0.95; margin-bottom: 1rem;">Growth by 2030</p>
-            <p style="font-size: 1rem; opacity: 0.85;">Dive tourism market expansion</p>
-          </div>
+        <div class="card reveal d1">
+          <div class="card-icon">🌿</div>
+          <h3>Nutrition-Focused Older Adults</h3>
+          <p>Middle-aged and older adults seeking balanced nutrition and longer, healthier lives. They care about meal management but won't wrestle with complicated apps.</p>
         </div>
-        
+      </div>
+      <div class="section-head reveal" style="margin-top: 72px; margin-bottom: 32px;">
+        <h2 class="h-section" style="font-size: clamp(26px, 3.2vw, 36px);">Early adopters: where we start.</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <div class="card-icon">📱</div>
+          <h3>Calorie-App Veterans</h3>
+          <p>People who have used apps like MyFitnessPal — 30M+ active users who already understand tracking, and already know its pain. Gramo removes the manual labor they hate.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-icon">🩺</div>
+          <h3>Dietitians &amp; Clinics</h3>
+          <p>Weight-management clinics need verified intake data. There are 115,000 registered dietitian nutritionists in the U.S. (CDR, 2025) — we estimate ~1,000 reachable via dietetic communities and campus programs within 6 months.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Problem Statement -->
+  <!-- Business model -->
   <section class="section">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="section-subtitle">The Challenge</p>
-        <h2 class="section-title">A Critical Gap in the Market</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow blue">Business Model</p>
+        <h2 class="h-section">Hardware once.<br>Value every meal.</h2>
       </div>
-      
-      <div class="grid grid-2" style="gap: 3rem;">
-        
-        <div class="impact-box" data-aos="fade-up" data-aos-delay="100">
-          <div style="font-size: 3.5rem; margin-bottom: 1.5rem; text-align: center;">⚠️</div>
-          <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem; text-align: center;">
-            Current Limitations
-          </h3>
-          <ul style="list-style: none; padding: 0;">
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-times-circle" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Most devices only support underwater voice communication</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-times-circle" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Lack of integrated safety monitoring features</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-times-circle" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">No real-time vitals tracking or team coordination</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-times-circle" style="color: var(--accent-orange); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Prohibitively expensive for recreational divers</span>
-            </li>
-          </ul>
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <div class="card-icon">🥄</div>
+          <h3>Gramo Device — $49</h3>
+          <p>Bill of materials $28, a 43% gross margin. The spoon is the entry point: affordable enough for anyone, precise enough to be trusted. The load cell — our most critical component — is dual-sourced from two suppliers to hedge supply-chain risk.</p>
         </div>
-        
-        <div class="impact-box" data-aos="fade-up" data-aos-delay="200" style="background: linear-gradient(135deg, rgba(78, 205, 196, 0.15) 0%, rgba(0, 217, 255, 0.15) 100%);">
-          <div style="font-size: 3.5rem; margin-bottom: 1.5rem; text-align: center;">✅</div>
-          <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem; text-align: center;">
-            DiveGuard Solution
-          </h3>
-          <ul style="list-style: none; padding: 0;">
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-check-circle" style="color: var(--accent-cyan); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Integrated communication + health monitoring</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-check-circle" style="color: var(--accent-cyan); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Real-time physiological data tracking</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-check-circle" style="color: var(--accent-cyan); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Multi-diver network coordination</span>
-            </li>
-            <li style="padding: 0.8rem 0; display: flex; align-items: flex-start; gap: 1rem;">
-              <i class="fas fa-check-circle" style="color: var(--accent-cyan); font-size: 1.2rem; margin-top: 0.3rem;"></i>
-              <span style="font-size: 1rem; line-height: 1.6;">Affordable pricing for all divers</span>
-            </li>
-          </ul>
+        <div class="card reveal d1">
+          <div class="card-icon">✨</div>
+          <h3>Freemium App — $4.99/mo Premium</h3>
+          <p>The free tier covers food recognition and calorie logging. Premium unlocks the AI nutrition agent. Passive measurement drives retention — the core assumption that makes recurring revenue viable.</p>
         </div>
-        
+      </div>
+      <div class="table-wrap reveal" style="margin-top: 40px;">
+        <table class="spec">
+          <thead>
+            <tr>
+              <th>Cost Structure</th>
+              <th>Share</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hardware BOM &amp; assembly</td>
+              <td>30%</td>
+              <td>Load cell dual-sourced for supply-chain resilience</td>
+            </tr>
+            <tr>
+              <td>AI model development</td>
+              <td>30%</td>
+              <td>Two-stage dish recognition, accuracy grows with use</td>
+            </tr>
+            <tr>
+              <td>App &amp; cloud operations</td>
+              <td>20%</td>
+              <td>Sync, storage, and nutrition data services</td>
+            </tr>
+            <tr>
+              <td>Marketing &amp; user acquisition</td>
+              <td>15%</td>
+              <td>Channels below — plus a one-week free trial</td>
+            </tr>
+            <tr>
+              <td>Compliance &amp; certification</td>
+              <td>5%</td>
+              <td>Food-contact and electronics certification</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid grid-2" style="margin-top: 40px;">
+        <div class="card reveal">
+          <div class="card-icon">📣</div>
+          <h3>Reach</h3>
+          <p>Ads on Xiaohongshu and Douyin (and TikTok for international reach), meeting health-conscious users where they already scroll.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-icon">📦</div>
+          <h3>Distribution</h3>
+          <p> sold through Taobao, Amazon, and other reseller platforms — delivered as a device plus software plus data services.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Impact Section -->
-  <section class="section" style="background: var(--gradient-ocean); color: white;">
+  <!-- Competition -->
+  <section class="section gray">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="section-subtitle" style="color: var(--accent-cyan);">Our Impact</p>
-        <h2 class="section-title" style="color: white;">Making a Real Difference</h2>
-        <p class="section-description" style="color: rgba(255,255,255,0.9);">
-          DiveGuard's technology creates measurable positive impacts on diver safety, rescue operations, and sustainable ocean exploration.
-        </p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Competitive Landscape</p>
+        <h2 class="h-section">Everyone measures something.<br>No one measures the bite.</h2>
       </div>
-      
-      <div class="grid grid-3">
-        
-        <div style="text-align: center;" data-aos="zoom-in" data-aos-delay="100">
-          <div style="font-size: 4rem; margin-bottom: 1.5rem;">🛡️</div>
-          <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem;">Enhanced Safety</h3>
-          <p style="font-size: 1.1rem; opacity: 0.9; line-height: 1.7;">
-            Real-time monitoring reduces diving incidents and enables faster emergency response.
-          </p>
-        </div>
-        
-        <div style="text-align: center;" data-aos="zoom-in" data-aos-delay="200">
-          <div style="font-size: 4rem; margin-bottom: 1.5rem;">⏱️</div>
-          <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem;">Faster Response</h3>
-          <p style="font-size: 1.1rem; opacity: 0.9; line-height: 1.7;">
-            Instant alerts and location tracking dramatically reduce rescue response times.
-          </p>
-        </div>
-        
-        <div style="text-align: center;" data-aos="zoom-in" data-aos-delay="300">
-          <div style="font-size: 4rem; margin-bottom: 1.5rem;">🌊</div>
-          <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem;">Sustainable Exploration</h3>
-          <p style="font-size: 1.1rem; opacity: 0.9; line-height: 1.7;">
-            Encourages responsible ocean exploration with data-driven safety insights.
-          </p>
-        </div>
-        
+      <div class="table-wrap reveal">
+        <table class="spec">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Measures Mass</th>
+              <th>Per-Bite, As You Eat</th>
+              <th>No Manual Input</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tracking apps (Keep, MyFitnessPal)</td>
+              <td>✕ — manual selection, highly inaccurate</td>
+              <td>✕</td>
+              <td>✕ — daily manual input</td>
+            </tr>
+            <tr>
+              <td>Photo food diaries</td>
+              <td>✕ — can't measure mass</td>
+              <td>✕</td>
+              <td>✕ — hard to sustain</td>
+            </tr>
+            <tr>
+              <td>Smart kitchen scales</td>
+              <td>✓</td>
+              <td>✕ — only before eating</td>
+              <td>✕</td>
+            </tr>
+            <tr>
+              <td><strong>Gramo</strong></td>
+              <td class="hl-win">✓</td>
+              <td class="hl-win">✓ — mass + calories per spoonful</td>
+              <td class="hl-win">✓ — fully automatic</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lede reveal" style="margin: 36px auto 0; text-align: center;">Our sustainable advantage compounds: detection accuracy improves with every meal you log, and switching costs grow the longer you use Gramo.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark">
+    <div class="container cta reveal">
+      <h2 class="h-section">Interested in partnering,<br>mentoring, or piloting Gramo?</h2>
+      <p class="h-sub" style="color: #a1a1a6;">We'd love to hear from dietitians, clinics, educators, and advisors.</p>
+      <div class="row">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="team.html" class="link-chevron">Meet the team</a>
       </div>
     </div>
   </section>
 
-  <!-- SDG Alignment -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="section-subtitle">UN Sustainable Development Goals</p>
-        <h2 class="section-title">Contributing to Global Goals</h2>
-        <p class="section-description">
-          DiveGuard aligns with key United Nations Sustainable Development Goals through safer diving and marine conservation support.
-        </p>
-      </div>
-      
-      <div class="grid grid-2" style="gap: 3rem;">
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); color: white; border: none;">
-          <div style="font-size: 4rem; margin-bottom: 1.5rem; text-align: center;">🏥</div>
-          <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">SDG 3</h3>
-          <h4 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; text-align: center; opacity: 0.95;">Good Health & Well-Being</h4>
-          <p style="font-size: 1.1rem; opacity: 0.9; line-height: 1.7; text-align: center;">
-            Protecting divers' health through continuous vital monitoring and emergency alert systems.
-          </p>
-        </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="200" style="background: linear-gradient(135deg, #00D9FF 0%, #4ECDC4 100%); color: white; border: none;">
-          <div style="font-size: 4rem; margin-bottom: 1.5rem; text-align: center;">🐠</div>
-          <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">SDG 14</h3>
-          <h4 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; text-align: center; opacity: 0.95;">Life Below Water</h4>
-          <p style="font-size: 1.1rem; opacity: 0.9; line-height: 1.7; text-align: center;">
-            Supporting sustainable ocean exploration and promoting marine conservation awareness.
-          </p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- Quote Section -->
-  <section class="section" style="background: #F7FAFC;">
-    <div class="container">
-      <div class="text-center" style="max-width: 900px; margin: 0 auto;" data-aos="zoom-in">
-        <div style="font-size: 4rem; margin-bottom: 2rem; opacity: 0.3;">"</div>
-        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: var(--primary-dark); line-height: 1.5; margin-bottom: 2rem; font-style: italic;">
-          Every dive should end with a safe return — DiveGuard makes sure of that.
-        </h2>
-        <p style="font-size: 1.2rem; color: var(--neutral-gray); font-weight: 600;">
-          — DiveGuard Team
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="section">
-    <div class="container">
-      <div style="background: var(--gradient-ocean); border-radius: 30px; padding: 5rem 3rem; text-align: center;" data-aos="zoom-in">
-        <h2 style="color: white; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1.5rem;">
-          Join Us in Transforming Underwater Safety
-        </h2>
-        <p style="color: rgba(255,255,255,0.9); font-size: 1.3rem; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-          Whether you're an investor, partner, or diving enthusiast, let's work together to make every dive safer.
-        </p>
-        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-primary" style="background: var(--accent-orange);">Get in Touch</a>
-          <a href="technology.html" class="btn btn-secondary" style="border-color: white; color: white;">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3 class="logo" style="margin-bottom: 1rem;">
-            <span class="logo-icon">🌊</span>
-            DiveGuard
-          </h3>
-          <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">
-            Empowering every dive with safety and connection. Making underwater exploration accessible, secure, and smarter for divers worldwide.
-          </p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Gramo <small>by Equimeal</small></a>
+          <p>Equimeal — Equality and Meal. A calorie-tracking utensil that makes weight loss and nutritional management accessible to everyone.</p>
         </div>
-        
-        <div class="footer-section">
-          <h3>Quick Links</h3>
+        <div>
+          <h4>Product</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="team.html">Our Team</a></li>
             <li><a href="innovation.html">Innovation</a></li>
             <li><a href="technology.html">Technology</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
-        
-        <div class="footer-section">
-          <h3>Explore</h3>
+        <div>
+          <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="gallery.html">Model Gallery</a></li>
-            <li><a href="market.html">Market & Impact</a></li>
+            <li><a href="about.html">About Equimeal</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="market.html">Market</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
             <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Get in Touch</h3>
-          <ul class="footer-links">
-            <li><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> info@diveguard.com</li>
-            <li><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> +1 (555) 123-4567</li>
+            <li><a href="mailto:hello@equimeal.com">hello@equimeal.com</a></li>
           </ul>
         </div>
       </div>
-      
       <div class="footer-bottom">
-        <p>&copy; 2025 DiveGuard · All Rights Reserved</p>
+        <span>Copyright © 2026 Equimeal · TEAM 智味勺 · Conrad Challenge — Health &amp; Nutrition. All rights reserved.</span>
+        <span>Smart Weighing, Clear Eating.</span>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main.js"></script>
-  
-  <script>
-    // Market Growth Chart
-    const ctx = document.getElementById('marketChart').getContext('2d');
-    const marketChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['2024', '2025', '2026', '2027', '2028', '2029', '2030'],
-        datasets: [{
-          label: 'Market Size (Billion USD)',
-          data: [4.4, 4.6, 4.8, 5.0, 5.2, 5.3, 5.5],
-          borderColor: '#00D9FF',
-          backgroundColor: 'rgba(0, 217, 255, 0.1)',
-          borderWidth: 3,
-          fill: true,
-          tension: 0.4,
-          pointRadius: 6,
-          pointHoverRadius: 8,
-          pointBackgroundColor: '#00D9FF',
-          pointBorderColor: '#fff',
-          pointBorderWidth: 2
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top',
-            labels: {
-              font: {
-                size: 14,
-                family: 'Inter'
-              },
-              color: '#2D3748',
-              padding: 20
-            }
-          },
-          tooltip: {
-            backgroundColor: '#0A2540',
-            titleColor: '#00D9FF',
-            bodyColor: '#fff',
-            padding: 15,
-            cornerRadius: 10,
-            titleFont: {
-              size: 14,
-              weight: 'bold'
-            },
-            bodyFont: {
-              size: 13
-            }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: false,
-            min: 4.0,
-            max: 6.0,
-            ticks: {
-              callback: function(value) {
-                return '$' + value + 'B';
-              },
-              font: {
-                size: 12,
-                family: 'Inter'
-              },
-              color: '#718096'
-            },
-            grid: {
-              color: 'rgba(0, 0, 0, 0.05)'
-            }
-          },
-          x: {
-            ticks: {
-              font: {
-                size: 12,
-                family: 'Inter'
-              },
-              color: '#718096'
-            },
-            grid: {
-              display: false
-            }
-          }
-        }
-      }
-    });
-  </script>
-
 </body>
 </html>

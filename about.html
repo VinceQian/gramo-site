@@ -3,36 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about DiveGuard's mission to empower every dive with safety and connection.">
-  <title>About Us - DiveGuard</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  
-  <!-- Main Stylesheet -->
+  <meta name="description" content="About Equimeal — Equality and Meal. Our mission, vision, values, and the story behind Gramo, the smart weighing spoon.">
+  <title>About — Equimeal</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">🌊</span>
-        DiveGuard
-      </a>
-      
+      <a href="index.html" class="nav-logo">Gramo <small>by Equimeal</small></a>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="index.html" class="nav-link">Overview</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
         <li><a href="team.html" class="nav-link">Team</a></li>
         <li><a href="innovation.html" class="nav-link">Innovation</a></li>
         <li><a href="gallery.html" class="nav-link">Gallery</a></li>
@@ -40,292 +22,192 @@
         <li><a href="technology.html" class="nav-link">Technology</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-      
-      <button class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" style="min-height: 60vh;">
-    <div class="hero-content">
-      <p class="hero-subtitle">Our Mission Beneath the Waves</p>
-      <h1 class="hero-title">Empowering Every Dive<br>with Safety and Connection</h1>
-    </div>
-    <div class="wave-background"></div>
-  </section>
+  <header class="page-hero">
+    <p class="eyebrow">About Equimeal</p>
+    <h1 class="h-section">Equality and Meal.</h1>
+    <p class="h-sub">Equimeal is a made-up word combining two ideas we refuse to separate — equal access to health, and the meals where health begins.</p>
+  </header>
 
-  <!-- Mission Section -->
+  <!-- Mission & Vision -->
   <section class="section">
     <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 4rem;">
-        <div data-aos="fade-right">
-          <div style="background: var(--gradient-ocean); border-radius: 20px; padding: 4rem 3rem; text-align: center; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);">
-            <div style="font-size: 6rem; margin-bottom: 1rem;">🌊</div>
-            <h3 style="color: white; font-size: 2rem; font-weight: 700;">Our Passion</h3>
-            <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-top: 1rem;">
-              Deep love for the ocean drives everything we do
-            </p>
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <div class="card-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>A calorie-tracking utensil that automatically weighs every bite — making weight loss and nutritional management accessible to everyone.</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-icon">🔭</div>
+          <h3>Our Vision</h3>
+          <p>To build a smart weighing platform that covers all scenarios — and promotes healthy eating habits for all humanity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section gray">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow blue">Core Values</p>
+        <h2 class="h-section">What we stand for.</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card reveal">
+          <div class="card-icon">💚</div>
+          <h3>Health &amp; Well-being</h3>
+          <p>Every decision starts from one question: does this help someone eat better and live healthier?</p>
+        </div>
+        <div class="card reveal d1">
+          <div class="card-icon">🎯</div>
+          <h3>Precision &amp; Quality</h3>
+          <p>From the load cell to the calorie math, accuracy is the product. We calibrate, test, and verify.</p>
+        </div>
+        <div class="card reveal d2">
+          <div class="card-icon">💡</div>
+          <h3>Innovation</h3>
+          <p>A spoon that weighs what you eat didn't exist — so we built it, from firmware to app to cloud.</p>
+        </div>
+        <div class="card reveal d3">
+          <div class="card-icon">🤝</div>
+          <h3>Inclusivity</h3>
+          <p>Nutritional management shouldn't be a privilege. Gramo is designed to be affordable and effortless for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story timeline -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="h-section">From a competition brief<br>to a working product.</h2>
+        <p class="h-sub">Equimeal is TEAM 智味勺 — four students from Hangzhou Entel Foreign Language School, competing in the Conrad Challenge, Health &amp; Nutrition track.</p>
+      </div>
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-date">The Spark</div>
+          <div>
+            <h4>A problem we watched happen</h4>
+            <p>34.3% of Chinese adults are overweight and 16.4% are obese (NHC 2024). People around us wanted to control calories — but manual food logging was too tedious to sustain, and guessing was too inaccurate to work.</p>
           </div>
         </div>
-        
-        <div data-aos="fade-left">
-          <div class="section-subtitle">Who We Are</div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
-            Innovators United by Ocean
-          </h2>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-            DiveGuard was founded by a passionate team of young innovators who share a deep love for the ocean and a drive to make diving safer and smarter.
-          </p>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-            We believe that underwater exploration should be both <strong style="color: var(--primary-dark);">thrilling and secure</strong>. Our mission is to empower divers around the world with advanced yet accessible safety technology.
-          </p>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8;">
-            Every member of our team brings unique expertise — from engineering and design to business strategy and environmental science — all working toward one goal: making every dive safer.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Vision Statement -->
-  <section class="section" style="background: var(--gradient-ocean); color: white;">
-    <div class="container">
-      <div class="text-center" style="max-width: 900px; margin: 0 auto;" data-aos="zoom-in">
-        <div class="section-subtitle" style="color: var(--accent-cyan);">Our Vision</div>
-        <h2 style="font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; font-family: var(--font-display); line-height: 1.3; margin-bottom: 2rem;">
-          "To build a global underwater communication ecosystem where every diver feels connected, confident, and safe."
-        </h2>
-        <p style="font-size: 1.2rem; opacity: 0.9; line-height: 1.8;">
-          We envision a future where advanced safety technology is standard equipment for every diver, from recreational enthusiasts to professional explorers.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Values -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <p class="section-subtitle">What Drives Us</p>
-        <h2 class="section-title">Our Core Values</h2>
-        <p class="section-description">
-          These principles guide every decision we make and every product we create.
-        </p>
-      </div>
-      
-      <div class="grid grid-2" style="gap: 3rem;">
-        
-        <!-- Value 1 -->
-        <div class="card" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, #0A2540 0%, #1E3A5F 100%); color: white; border: none;">
-          <div style="font-size: 3.5rem; margin-bottom: 1.5rem;">💡</div>
-          <h3 class="card-title" style="color: var(--accent-cyan); font-size: 2rem;">Innovation</h3>
-          <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
-            We push the boundaries of what's possible in underwater technology. Every challenge is an opportunity to innovate and create solutions that didn't exist before.
-          </p>
-        </div>
-        
-        <!-- Value 2 -->
-        <div class="card" data-aos="fade-up" data-aos-delay="200" style="background: linear-gradient(135deg, #00D9FF 0%, #4ECDC4 100%); color: white; border: none;">
-          <div style="font-size: 3.5rem; margin-bottom: 1.5rem;">🛡️</div>
-          <h3 class="card-title" style="color: white; font-size: 2rem;">Safety</h3>
-          <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.95;">
-            Safety isn't optional — it's fundamental. We design every feature with the diver's wellbeing as our top priority, ensuring reliable performance in any condition.
-          </p>
-        </div>
-        
-        <!-- Value 3 -->
-        <div class="card" data-aos="fade-up" data-aos-delay="300" style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); color: white; border: none;">
-          <div style="font-size: 3.5rem; margin-bottom: 1.5rem;">🌍</div>
-          <h3 class="card-title" style="color: white; font-size: 2rem;">Accessibility</h3>
-          <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.95;">
-            Advanced safety technology should be available to everyone, not just elite professionals. We're committed to making DiveGuard affordable without compromising quality.
-          </p>
-        </div>
-        
-        <!-- Value 4 -->
-        <div class="card" data-aos="fade-up" data-aos-delay="400" style="background: linear-gradient(135deg, #2C5F8D 0%, #0A7373 100%); color: white; border: none;">
-          <div style="font-size: 3.5rem; margin-bottom: 1.5rem;">🌿</div>
-          <h3 class="card-title" style="color: var(--accent-cyan); font-size: 2rem;">Environmental Responsibility</h3>
-          <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
-            The ocean is our inspiration and our responsibility. We design with minimal environmental impact and support conservation efforts to protect marine ecosystems.
-          </p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- Story Section -->
-  <section class="section" style="background: #F7FAFC;">
-    <div class="container">
-      <div class="grid grid-2" style="align-items: center; gap: 4rem;">
-        
-        <div data-aos="fade-right">
-          <div class="section-subtitle">Our Journey</div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
-            From Idea to Impact
-          </h2>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-            DiveGuard began as a simple question: <em>"Why isn't underwater safety technology more accessible?"</em>
-          </p>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-            After witnessing the high costs and limited availability of existing systems, our team decided to take action. We combined expertise in hardware engineering, product design, and business strategy to create a solution that's both advanced and affordable.
-          </p>
-          <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8;">
-            Today, DiveGuard represents hundreds of hours of research, prototyping, and testing — all driven by our commitment to making every dive safer.
-          </p>
-        </div>
-        
-        <div data-aos="fade-left" data-aos-delay="200">
-          <div style="background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);">
-            <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 2rem;">
-              Key Milestones
-            </h3>
-            
-            <div style="position: relative; padding-left: 2rem;">
-              <!-- Timeline line -->
-              <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--accent-cyan) 0%, var(--accent-teal) 100%);"></div>
-              
-              <!-- Milestone items -->
-              <div style="margin-bottom: 2rem; position: relative;">
-                <div style="position: absolute; left: -2.25rem; top: 0.3rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-cyan);"></div>
-                <h4 style="font-weight: 600; color: var(--primary-dark); margin-bottom: 0.5rem;">2023 Q3</h4>
-                <p style="color: var(--neutral-gray);">Initial concept and team formation</p>
-              </div>
-              
-              <div style="margin-bottom: 2rem; position: relative;">
-                <div style="position: absolute; left: -2.25rem; top: 0.3rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-cyan);"></div>
-                <h4 style="font-weight: 600; color: var(--primary-dark); margin-bottom: 0.5rem;">2024 Q1</h4>
-                <p style="color: var(--neutral-gray);">First prototype completed</p>
-              </div>
-              
-              <div style="margin-bottom: 2rem; position: relative;">
-                <div style="position: absolute; left: -2.25rem; top: 0.3rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-cyan);"></div>
-                <h4 style="font-weight: 600; color: var(--primary-dark); margin-bottom: 0.5rem;">2024 Q3</h4>
-                <p style="color: var(--neutral-gray);">Successful pool and field testing</p>
-              </div>
-              
-              <div style="position: relative;">
-                <div style="position: absolute; left: -2.25rem; top: 0.3rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-orange);"></div>
-                <h4 style="font-weight: 600; color: var(--accent-orange); margin-bottom: 0.5rem;">2025</h4>
-                <p style="color: var(--neutral-gray);">Product refinement and market launch</p>
-              </div>
-            </div>
+        <div class="t-item reveal">
+          <div class="t-date">The Idea</div>
+          <div>
+            <h4>What if the utensil did the work?</h4>
+            <p>Existing tools all fail the same way: apps need manual input, photo diaries can't measure mass, kitchen scales only work before eating. We asked: what if the spoon itself weighed every bite, automatically?</p>
           </div>
         </div>
-        
+        <div class="t-item reveal">
+          <div class="t-date">The Build</div>
+          <div>
+            <h4>Hardware meets software meets data</h4>
+            <p>We assembled the spoon's internal components, streamed weight data over Bluetooth, and watched calories appear on screen — the full hardware–software–data chain running end to end, working through sensor drift and packet loss along the way.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-date">The Prototype</div>
+          <div>
+            <h4>A real product people can open</h4>
+            <p>The companion app became a working web prototype running in the browser — with dish recognition built "narrow first": a curated database done accurately, rather than a huge one done poorly.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-date">The Business</div>
+          <div>
+            <h4>Every number, sourced</h4>
+            <p>We validated the model box by box on the Lean Canvas — pricing at $49 with 43% gross margin, a $4.99/month Premium tier, and dual-sourced load cells — backing every figure with industry reports and competitor pricing.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-date">What's Next</div>
+          <div>
+            <h4>Beyond the spoon</h4>
+            <p>Quantitative sensor calibration, then Gramo's bigger ambition: a smart weighing platform that covers all eating scenarios — anywhere people eat, Equimeal can measure.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Mentorship & Support -->
+  <!-- Impact -->
+  <section class="section dark">
+    <div class="container">
+      <div class="split">
+        <div class="copy reveal">
+          <p class="eyebrow">Why It Matters</p>
+          <h2 class="h-section">Diet-driven obesity is a public-health crisis.</h2>
+          <p class="lede">Workers and students aged 20–35 who eat out daily want to control calorie intake — but quit food logging. When tracking fails, diets fail. Gramo removes the failure point: the tracking happens by itself, as you eat.</p>
+          <ul class="check-list">
+            <li>Automatic — nothing to remember, nothing to quit</li>
+            <li>Accurate — measured mass, not estimated portions</li>
+            <li>Affordable — $49 device with a free app tier</li>
+          </ul>
+        </div>
+        <div class="media reveal d1">
+          <img src="assets/meal-flatlay.jpg" alt="A balanced healthy meal with the Gramo spoon" style="border-radius: 28px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="section">
-    <div class="container">
-      <div class="text-center" style="max-width: 800px; margin: 0 auto;" data-aos="fade-up">
-        <div class="section-subtitle">Guided by Excellence</div>
-        <h2 class="section-title">Mentorship & Support</h2>
-        <p style="font-size: 1.2rem; color: var(--neutral-gray); line-height: 1.8; margin-bottom: 2rem;">
-          We're proud to be guided by <strong style="color: var(--primary-dark);">JJ Zhang</strong> and the <strong style="color: var(--primary-dark);">STEMHUB mentor team</strong>, who specialize in innovation and entrepreneurship education.
-        </p>
-        <p style="font-size: 1.1rem; color: var(--neutral-gray); line-height: 1.8;">
-          Their expertise has been instrumental in shaping DiveGuard from a concept into a viable product, providing invaluable guidance on technical development, business strategy, and bringing innovative ideas to life.
-        </p>
-      </div>
-      
-      <div style="margin-top: 4rem; text-align: center;">
-        <div style="display: inline-block; background: var(--gradient-ocean); padding: 2.5rem 4rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);" data-aos="zoom-in" data-aos-delay="200">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
-          <h3 style="color: var(--accent-cyan); font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">STEMHUB</h3>
-          <p style="color: rgba(255,255,255,0.9); font-size: 1rem;">Innovation & Entrepreneurship Education</p>
-        </div>
+    <div class="container cta reveal">
+      <h2 class="h-section">Meet the people<br>behind the spoon.</h2>
+      <p class="h-sub">Four students, one mentor, one mission.</p>
+      <div class="row">
+        <a href="team.html" class="btn btn-primary">Meet the Team</a>
+        <a href="market.html" class="link-chevron">See the market</a>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="section" style="background: var(--gradient-ocean); color: white;">
-    <div class="container">
-      <div class="text-center" data-aos="zoom-in">
-        <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1.5rem;">
-          Want to Learn More?
-        </h2>
-        <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-          Discover our innovative technology or meet the team behind DiveGuard.
-        </p>
-        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-          <a href="innovation.html" class="btn btn-primary" style="background: var(--accent-orange);">View Innovation</a>
-          <a href="team.html" class="btn btn-secondary" style="border-color: white; color: white;">Meet the Team</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3 class="logo" style="margin-bottom: 1rem;">
-            <span class="logo-icon">🌊</span>
-            DiveGuard
-          </h3>
-          <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">
-            Empowering every dive with safety and connection. Making underwater exploration accessible, secure, and smarter for divers worldwide.
-          </p>
-          <div class="social-links">
-            <a href="#" class="social-link" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Gramo <small>by Equimeal</small></a>
+          <p>Equimeal — Equality and Meal. A calorie-tracking utensil that makes weight loss and nutritional management accessible to everyone.</p>
         </div>
-        
-        <div class="footer-section">
-          <h3>Quick Links</h3>
+        <div>
+          <h4>Product</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="team.html">Our Team</a></li>
             <li><a href="innovation.html">Innovation</a></li>
             <li><a href="technology.html">Technology</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
-        
-        <div class="footer-section">
-          <h3>Explore</h3>
+        <div>
+          <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="gallery.html">Model Gallery</a></li>
-            <li><a href="market.html">Market & Impact</a></li>
+            <li><a href="about.html">About Equimeal</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="market.html">Market</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
             <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Get in Touch</h3>
-          <ul class="footer-links">
-            <li><i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> info@diveguard.com</li>
-            <li><i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--accent-cyan);"></i> +1 (555) 123-4567</li>
+            <li><a href="mailto:hello@equimeal.com">hello@equimeal.com</a></li>
           </ul>
         </div>
       </div>
-      
       <div class="footer-bottom">
-        <p>&copy; 2025 DiveGuard · All Rights Reserved</p>
+        <span>Copyright © 2026 Equimeal · TEAM 智味勺 · Conrad Challenge — Health &amp; Nutrition. All rights reserved.</span>
+        <span>Smart Weighing, Clear Eating.</span>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>
